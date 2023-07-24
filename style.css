@@ -1,0 +1,104 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+@import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --base01: #181825;
+    --base02: #313244;
+    --base03: #45475a;
+    --base04: #585b70;
+    --base05: #cdd6f4;
+    --base06: #f5e0dc;
+    --base07: #b4befe;
+    --base08: #f38ba8;
+    --base09: #fab387;
+    --base0A: #f9e2af;
+    --base0B: #a6e3a1;
+    --base0C: #94e2d5;
+    --base0D: #89b4fa;
+    --base0E: #cba6f7;
+    --base0F: #f2cdcd;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--base01);
+    color: var(--base05);
+
+    font-family: 'Iosevka Web', monospace;
+}
+
+a {
+    color: var(--base09)
+}
+
+a:hover {
+    color: var(--base0B)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--base08);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.bio img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.bio .name {
+    font-size: 2.15em;
+    color: var(--base06);
+}
+
+.bio .description {
+    font-family: 'Comic Neue';
+    font-style: italic;
+    text-align: center;
+    max-width: 70ch;
+}
+
+.bio .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.bio .contact-info i {
+    font-size: 1.1em;
+}
+
+ul.contact-info {
+    padding-inline-start: 0;
+}
+
+.bio .contact-info li {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.bio .resume-link {
+    font-weight: 700;
+}
