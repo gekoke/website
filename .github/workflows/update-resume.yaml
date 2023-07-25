@@ -1,0 +1,28 @@
+name: update-resume
+on:
+  workflow_dispatch:
+
+jobs:
+  update-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v1
+      - name: Update resume
+        id: update
+        uses: DeterminateSystems/update-flake-lock@v19
+        with:
+          inputs: resume
+          commit-msg: "chore: update resume"
+          pr-title: "Update resume"
+          pr-labels: |
+            dependencies
+            bot
+          pr-body: |
+            Updating resume using the [update-flake-lock](https://github.com/DeterminateSystems/update-flake-lock) GitHub Action.
+            
+            ```
+            {{ env.GIT_COMMIT_MESSAGE }}
+            ```
