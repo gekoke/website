@@ -1,4 +1,4 @@
-name: update-resume
+name: update resume
 on:
   workflow_dispatch:
 
