@@ -38,14 +38,6 @@ body {
     font-family: 'Iosevka Web', monospace;
 }
 
-a {
-    color: var(--base09)
-}
-
-a:hover {
-    color: var(--base0B)
-}
-
 h1,
 h2,
 h3,
@@ -79,6 +71,21 @@ h6 {
     max-width: 70ch;
 }
 
+.bio #location-cont i {
+    color: var(--base0B);
+}
+
+.bio i {
+    font-size: 1.5em;
+    transition: all 0.15s ease-in-out;
+}
+
+.bio .contact-info i:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -4px, 0px);
+  color: var(--base09);
+}
+
 .bio .contact-info {
     display: flex;
     justify-content: center;
@@ -86,8 +93,8 @@ h6 {
     gap: 2em;
 }
 
-.bio .contact-info i {
-    font-size: 1.1em;
+.bio .contact-info a {
+    color: var(--base05);
 }
 
 ul.contact-info {
@@ -97,8 +104,4 @@ ul.contact-info {
 .bio .contact-info li {
     padding-inline-start: 0;
     list-style-type: none;
-}
-
-.bio .resume-link {
-    font-weight: 700;
 }
