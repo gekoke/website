@@ -37,11 +37,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1692797184,
-        "narHash": "sha256-FzyuOvasb+GuLrqh+lFstwMTBm7upORjIrPu1jSdEHU=",
+        "lastModified": 1692797799,
+        "narHash": "sha256-uu6tO2R0N9DL6ob/852OpBXa4GHF+MluENv2Q3oq5eU=",
         "owner": "gekoke",
         "repo": "resume",
-        "rev": "c0cc660cad670454e31fe5c846c2a21db0492c30",
+        "rev": "53e2abcd767c6fc26992059c25e8f3db02e119d7",
         "type": "github"
       },
       "original": {
