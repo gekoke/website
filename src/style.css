@@ -83,7 +83,7 @@ h6 {
 .bio .contact-info i:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -4px, 0px);
-  color: var(--base09);
+  color: var(--base0E);
 }
 
 .bio .contact-info {
@@ -104,4 +104,25 @@ ul.contact-info {
 .bio .contact-info li {
     padding-inline-start: 0;
     list-style-type: none;
+}
+
+.tippy-box[data-theme~='geko'] {
+    color: var(--base02);
+    background-color: var(--base0E);
+}
+.tippy-arrow[data-theme~='geko'] {
+    background-color: var(--base0E);
+}
+
+.tippy-box[data-theme~='geko'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--base0E);
+}
+.tippy-box[data-theme~='geko'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--base0E);
+}
+.tippy-box[data-theme~='geko'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--base0E);
+}
+.tippy-box[data-theme~='geko'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--base0E);
 }

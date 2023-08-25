@@ -2,48 +2,61 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gregor Grigorjan</title>
-  <link rel="icon" type="image/x-icon" href="./gecko.ico">
-  <link href="./style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gregor Grigorjan</title>
+    <link rel="icon" type="image/x-icon" href="./gecko.ico">
+    <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <div class="bio">
-    <img src="./gecko.jpg" />
-    <h1 class="name">Gregor Grigorjan</h1>
-    <div id="location-cont">
-        <i class="fa-solid fa-location-dot fa-fw"></i>
-        <span>Tallinn, Estonia 🇪🇪</span>
+    <div class="bio">
+        <img src="./gecko.jpg" />
+        <h1 class="name">Gregor Grigorjan</h1>
+        <div id="location-cont">
+            <i class="fa-solid fa-location-dot fa-fw"></i>
+            <span>Tallinn, Estonia 🇪🇪</span>
+        </div>
+        <p class="description">
+            An aspiring developer and computer science student - I enjoy tinkering with my system, mucking about with
+            software, reading, Nix and functional programming.
+        </p>
+        <ul class="contact-info">
+            <li class="phone">
+                <a id="phone" href="tel:+37256952152"> <i class="fa-solid fa-phone fa-fw"></i> </a>
+            </li>
+            <li>
+                <a id="email" href="mailto:gregor@grigorjan.net"> <i class="fa-solid fa-envelope fa-fw"></i> </a>
+            </li>
+            <li>
+                <a id="resume" href="./resume.pdf"> <i class="fa-solid fa-file fa-fw"></i> </a>
+            </li>
+            <li>
+                <a id="linkedin" href="https://www.linkedin.com/in/gregor-grigorjan/"> <i
+                        class="fa-brands fa-linkedin fa-fw"></i> </a>
+            </li>
+            <li>
+                <a id="hacker-news" href="https://news.ycombinator.com/user?id=turboponyy"> <i
+                        class="fa-brands fa-y-combinator fa-fw"></i> </a>
+            </li>
+            <li>
+                <a id="github" href="https://www.github.com/gekoke"> <i class="fa-brands fa-github fa-fw"></i> </a>
+            </li>
+        </ul>
     </div>
-    <p class="description">
-      An aspiring developer and computer science student - I enjoy tinkering with my system, mucking about with
-      software, reading, Nix and functional programming.
-    </p>
-    <ul class="contact-info">
-      <li class="phone">
-        <a href="tel:+37256952152"> <i class="fa-solid fa-phone fa-fw"></i> </a>
-      </li>
-      <li>
-        <a href="mailto:gregor@grigorjan.net"> <i class="fa-solid fa-envelope fa-fw"></i> </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/gregor-grigorjan/"> <i class="fa-brands fa-linkedin fa-fw"></i> </a>
-      </li>
-      <li>
-        <a href="https://www.github.com/gekoke"> <i class="fa-brands fa-github fa-fw"></i> </a>
-      </li>
-      <li>
-        <a href="https://news.ycombinator.com/user?id=turboponyy"> <i class="fa-brands fa-y-combinator fa-fw"></i> </a>
-      </li>
-      <li class="resume-link">
-        <a href="./resume.pdf"> <i class="fa-solid fa-file fa-fw"></i> </a>
-      </li>
-    </ul>
-  </div>
 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        tippy('#phone', { content: 'Phone', placement: 'bottom', theme: 'geko', });
+        tippy('#email', { content: 'Email', placement: 'bottom', theme: 'geko', });
+        tippy('#linkedin', { content: 'LinkedIn', placement: 'bottom', theme: 'geko', });
+        tippy('#github', { content: 'GitHub', placement: 'bottom', theme: 'geko', });
+        tippy('#hacker-news', { content: 'Hacker News', placement: 'bottom', theme: 'geko', });
+        tippy('#resume', { content: 'Resume', placement: 'bottom', theme: 'geko', showOnCreate: true, });
+    </script>
 </body>
 
 </html>
