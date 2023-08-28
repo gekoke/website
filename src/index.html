@@ -23,14 +23,14 @@
             software, reading, Nix and functional programming.
         </p>
         <ul class="contact-info">
+            <li>
+                <a id="resume" href="./resume.pdf"> <i class="fa-solid fa-file fa-fw"></i> </a>
+            </li>
             <li class="phone">
                 <a id="phone" href="tel:+37256952152"> <i class="fa-solid fa-phone fa-fw"></i> </a>
             </li>
             <li>
                 <a id="email" href="mailto:gregor@grigorjan.net"> <i class="fa-solid fa-envelope fa-fw"></i> </a>
-            </li>
-            <li>
-                <a id="resume" href="./resume.pdf"> <i class="fa-solid fa-file fa-fw"></i> </a>
             </li>
             <li>
                 <a id="linkedin" href="https://www.linkedin.com/in/gregor-grigorjan/"> <i
@@ -50,12 +50,21 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
 
     <script>
-        tippy('#phone', { content: 'Phone', placement: 'bottom', theme: 'geko', });
-        tippy('#email', { content: 'Email', placement: 'bottom', theme: 'geko', });
-        tippy('#linkedin', { content: 'LinkedIn', placement: 'bottom', theme: 'geko', });
-        tippy('#github', { content: 'GitHub', placement: 'bottom', theme: 'geko', });
-        tippy('#hacker-news', { content: 'Hacker News', placement: 'bottom', theme: 'geko', });
-        tippy('#resume', { content: 'Resume', placement: 'bottom', theme: 'geko', showOnCreate: true, });
+     const tooltipItems = [
+        tippy('#resume', { content: 'Resume' }),
+        tippy('#phone', { content: 'Phone' }),
+        tippy('#email', { content: 'Email' }),
+        tippy('#linkedin', { content: 'LinkedIn' }),
+        tippy('#hacker-news', { content: 'Hacker News' }),
+        tippy('#github', { content: 'GitHub' }),
+     ].flat();
+     const tooltips = tippy.createSingleton(tooltipItems, {
+         placement: 'bottom',
+         theme: 'geko',
+         moveTransition: 'transform 0.125s ease-out',
+         delay: [null, 200],
+     });
+     tooltips.show(0);
     </script>
 </body>
 

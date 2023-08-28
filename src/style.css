@@ -80,6 +80,10 @@ h6 {
     transition: all 0.15s ease-in-out;
 }
 
+.bio .contact-info i {
+    font-size: 1.75em;
+}
+
 .bio .contact-info i:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -4px, 0px);
@@ -90,7 +94,7 @@ h6 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .bio .contact-info a {
