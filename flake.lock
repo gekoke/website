@@ -170,11 +170,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1695823173,
-        "narHash": "sha256-4pGFXnO+pXLbKPXBuzZcIJgjFlU4kRJWwc8CGLs4xuQ=",
+        "lastModified": 1696334855,
+        "narHash": "sha256-v6W+eaYrzsPgSQuhMKJ0l49Mz5rjcjEPZMV7t/1/qUY=",
         "owner": "gekoke",
         "repo": "resume",
-        "rev": "9137de13b2bf6acea6a0b369e0822017332862f9",
+        "rev": "c5b6ae0ade5c6e23f1c50b58ebf778e47e16976a",
         "type": "github"
       },
       "original": {
