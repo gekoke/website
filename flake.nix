@@ -12,12 +12,11 @@
     {
       packages.${system}.default = pkgs.stdenvNoCC.mkDerivation {
         name = "website";
-        src = ./.;
-        buildPhase = ''
-        '';
+        src = ./src;
+        buildPhase = null;
         installPhase = ''
           mkdir -p $out/public
-          cp ${resume.packages.${system}.default}/resume.pdf src/* $out/public/
+          cp ${resume.packages.${system}.default}/resume.pdf ./* $out/public/
         '';
       };
     };
