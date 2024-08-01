@@ -16,7 +16,8 @@
         buildPhase = null;
         installPhase = ''
           mkdir -p $out/public
-          cp ${resume.packages.${system}.default}/resume.pdf ./* $out/public/
+          cp ./* $out/public/
+          cp ${resume.packages.${system}.default} $out/public/resume.pdf
         '';
       };
     };
