@@ -17,7 +17,7 @@ jobs:
       - name: Enable magic Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Build site
-        run: nix build .\#packages.x86_64-linux.default --no-sandbox
+        run: nix build .\#packages.x86_64-linux.default
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
