@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v17
-      - name: Enable magic Nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Build site
         run: nix build .\#packages.x86_64-linux.default
       - name: Upload Pages artifact
