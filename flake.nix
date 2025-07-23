@@ -17,7 +17,7 @@
         installPhase = ''
           mkdir -p $out/public
           cp ./* $out/public/
-          cp ${resume.packages.${system}.default} $out/public/grigorjan-resume.pdf
+          cp ${resume.packages.${system}.default} $out/public/resume.pdf
         '';
       };
     };
