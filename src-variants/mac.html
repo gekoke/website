@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gregor — Macintosh</title>
+<link rel="icon" href="data:,">
+<style>
+body{background:#888;background-image:repeating-linear-gradient(45deg,#888 0 2px,#7e7e7e 2px 4px);color:#000;font-family:"Lucida Grande","Charcoal","Geneva",ui-rounded,system-ui,sans-serif;font-size:14px;margin:0;padding:1em;min-height:100vh}
+.menubar{background:#fff;border:1px solid #000;border-bottom:1px solid #000;padding:.15em .5em;display:flex;gap:1.5em;font-size:13px;max-width:780px;margin:0 auto;border-radius:6px 6px 0 0;box-shadow:2px 2px 0 #000}
+.menubar .apple{font-weight:bold}
+.win{background:#dedede;border:1px solid #000;max-width:780px;margin:0 auto 2em;box-shadow:3px 3px 0 #000;border-radius:0 0 4px 4px}
+.title{background:linear-gradient(#fff,#fff) , repeating-linear-gradient(0deg,#000 0 1px,#fff 1px 3px);background:repeating-linear-gradient(0deg,#000 0 1px,#fff 1px 3px);border-bottom:1px solid #000;padding:.25em 0;text-align:center;position:relative;font-weight:bold}
+.title span{background:#dedede;padding:0 .8em}
+.title::before{content:"";display:inline-block;width:14px;height:12px;background:#dedede;border:1px solid #000;position:absolute;left:.6em;top:.4em}
+.body{padding:1.25em 1.5em}
+h1{font-size:24px;margin:0 0 .25em;font-weight:bold}
+h2{font-size:14px;font-weight:bold;margin:1.2em 0 .3em;border-bottom:1px solid #000;padding-bottom:.1em}
+.tag{font-style:italic;margin:.2em 0}
+a,a:visited{color:#0000aa;text-decoration:underline}
+a:hover{background:#000088;color:#fff;text-decoration:none}
+ul{list-style:none;padding:0;margin:0}
+li{padding:.15em 0;display:flex;gap:1em}
+li b{display:inline-block;width:8em;font-weight:bold}
+.btn{display:inline-block;background:#dedede;border:1px solid #000;border-radius:8px;padding:.15em .8em;box-shadow:1px 1px 0 #000;font-weight:bold;text-decoration:none;color:#000;margin:.5em .3em 0 0}
+.btn:hover{background:#000088;color:#fff}
+.icon{display:inline-block;width:28px;height:28px;border:1px solid #000;background:#fff;text-align:center;font-weight:bold;line-height:26px;margin-right:.5em;vertical-align:middle;border-radius:3px;box-shadow:1px 1px 0 #000}
+footer{padding:.5em 1.5em;border-top:1px solid #000;background:#cfcfcf;font-size:12px;display:flex;justify-content:space-between;border-radius:0 0 4px 4px}
+</style>
+</head>
+<body>
+<div class="menubar"><span class="apple">&#63743;</span><span><b>File</b></span><span>Edit</span><span>View</span><span>Special</span><span>Help</span><span style="margin-left:auto">3:14 PM</span></div>
+<div class="win">
+<div class="title"><span>About Gregor</span></div>
+<div class="body">
+<p><span class="icon">G</span> <b>Gregor Grigorjan</b></p>
+<h1>Gregor Grigorjan</h1>
+<p class="tag">Open-source contributor, NixOS enthusiast, Emacs tinkerer.</p>
+<p>Tallinn, Estonia.</p>
+
+<h2>Contact</h2>
+<ul>
+<li><b>Resume:</b><a href="./resume.pdf">resume.pdf</a></li>
+<li><b>Email:</b><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+<li><b>Phone:</b><a href="tel:+37256952152">+372 5695 2152</a></li>
+<li><b>GitHub:</b><a href="https://github.com/gekoke">gekoke</a></li>
+<li><b>LinkedIn:</b><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+<li><b>Hacker News:</b><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+</ul>
+
+<h2>About</h2>
+<p>I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple.</p>
+<p>This document ships no JavaScript, no web fonts, no images, no trackers, and no CDN requests.</p>
+
+<a class="btn" href="./resume.pdf">Open Resume…</a>
+<a class="btn" href="mailto:gregor@grigorjan.net">Send Mail…</a>
+</div>
+<footer><span>1 item, 0K in folder</span><span>Build <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a></span></footer>
+</div>
+</body>
+</html>

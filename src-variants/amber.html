@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GREGOR GRIGORJAN // amber terminal</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--amber:#ffb000;--amber-dim:#cc8a00;--amber-faint:#664500;--bg:#1a0e00;--bg2:#221400}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--amber);font-family:ui-monospace,Consolas,"Courier New",monospace;font-size:16px;line-height:1.4;text-shadow:0 0 2px var(--amber),0 0 6px rgba(255,176,0,.4)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(180deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);z-index:1}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.6));z-index:2}
+.wrap{position:relative;max-width:78ch;margin:0 auto;padding:2.5rem 1.5rem 4rem;z-index:3}
+pre{margin:0;font:inherit;white-space:pre-wrap;word-wrap:break-word}
+h1{color:var(--amber);font-size:1.5rem;margin:0 0 1em;letter-spacing:1px}
+h2{color:var(--amber);font-size:1.05rem;margin:1.5em 0 .5em;border-bottom:1px dashed var(--amber-dim);padding-bottom:.2em}
+h2::before{content:"[ ";color:var(--amber-dim)}h2::after{content:" ]";color:var(--amber-dim)}
+a,a:visited{color:var(--amber);text-decoration:underline}
+a:hover{background:var(--amber);color:var(--bg);text-shadow:none}
+.prompt{color:var(--amber-dim)}
+ul{list-style:none;padding:0;margin:0}
+li::before{content:"$ ";color:var(--amber-dim)}
+.k{display:inline-block;min-width:10ch;color:var(--amber-dim)}
+.cur{display:inline-block;width:.6em;height:1em;background:var(--amber);vertical-align:text-bottom;animation:b 1s steps(2) infinite;margin-left:.2em}
+@keyframes b{50%{opacity:0}}
+hr{border:0;border-top:1px solid var(--amber-faint);margin:1.5em 0}
+footer{margin-top:2em;color:var(--amber-dim);font-size:.85em;border-top:1px solid var(--amber-faint);padding-top:1em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<pre>
+ ▄▄▄▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄▄
+ GG/OS  v1.0  --  user terminal
+</pre>
+<hr>
+<h1>Gregor Grigorjan<span class="cur"></span></h1>
+<p><span class="prompt">&gt;</span> Open-source contributor, NixOS enthusiast, Emacs tinkerer</p>
+<p><span class="prompt">@</span> Tallinn, Estonia</p>
+
+<h2>contact</h2>
+<ul>
+<li><span class="k">resume</span><a href="./resume.pdf">resume.pdf</a></li>
+<li><span class="k">email</span><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+<li><span class="k">phone</span><a href="tel:+37256952152">+372 5695 2152</a></li>
+<li><span class="k">github</span><a href="https://github.com/gekoke">gekoke</a></li>
+<li><span class="k">linkedin</span><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+<li><span class="k">hn</span><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+</ul>
+
+<h2>about</h2>
+<p>I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple.</p>
+<p>This page ships no JS, no fonts, no images, no trackers, no CDN requests.</p>
+
+<footer>built from commit <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a> // press any key to continue<span class="cur"></span></footer>
+</div>
+</body>
+</html>

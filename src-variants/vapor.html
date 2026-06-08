@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ＧＲＥＧＯＲ ／ vapor</title>
+<link rel="icon" href="data:,">
+<style>
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#0d0221 0%,#241734 35%,#a0207d 65%,#ff6ec7 90%,#ffd1ff 100%);color:#fff8ff;font-family:"Times New Roman",Times,serif;text-shadow:0 0 8px #ff6ec7,2px 2px 0 #2c0080}
+.grid{background-image:linear-gradient(transparent 95%,#ff00cc 95%),linear-gradient(90deg,transparent 95%,#ff00cc 95%);background-size:48px 48px;background-position:center bottom;height:40vh;width:100%;transform:perspective(400px) rotateX(60deg);transform-origin:center bottom;position:fixed;bottom:0;left:0;opacity:.55;pointer-events:none;z-index:0}
+.sun{position:fixed;top:8vh;left:50%;transform:translateX(-50%);width:280px;height:280px;border-radius:50%;background:linear-gradient(180deg,#ffea00 0%,#ff6ec7 60%,#a0207d 100%);box-shadow:0 0 80px #ff6ec7;opacity:.7;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:46em;margin:0 auto;padding:2em 1.5em 6em}
+h1{font-family:"Brush Script MT","Snell Roundhand",cursive;font-size:5rem;text-align:center;margin:.2em 0;letter-spacing:8px;color:#fff;text-shadow:3px 3px 0 #ff00cc,6px 6px 0 #00fff7}
+.tag{text-align:center;font-size:1.3rem;letter-spacing:.4em;text-transform:uppercase;color:#00fff7;text-shadow:2px 2px 0 #ff00cc;margin:0 0 1.5em}
+.box{background:rgba(13,2,33,.45);border:1px solid #ff6ec7;backdrop-filter:blur(2px);padding:1.2em 1.4em;margin:1em 0;box-shadow:0 0 25px rgba(255,110,199,.3),inset 0 0 25px rgba(0,255,247,.08)}
+h2{color:#00fff7;letter-spacing:.4em;text-transform:uppercase;font-size:1rem;margin:.2em 0 .6em;text-shadow:2px 2px 0 #ff00cc}
+h2::before{content:"▼ "}h2::after{content:" ▲"}
+a,a:visited{color:#ffea00;text-decoration:none}
+a:hover{color:#fff;text-shadow:0 0 12px #ffea00}
+ul{list-style:none;padding:0;margin:0}
+li{padding:.2em 0;letter-spacing:1px}
+li b{display:inline-block;min-width:7em;color:#ff6ec7;text-transform:uppercase;font-size:.85em;letter-spacing:.2em}
+.jp{font-size:1.4em;color:#fff;letter-spacing:.5em;text-align:center;margin:1em 0}
+footer{text-align:center;color:#ffd1ff;letter-spacing:.3em;text-transform:uppercase;font-size:.8em;margin-top:2em}
+</style>
+</head>
+<body>
+<div class="sun"></div>
+<div class="grid"></div>
+<div class="wrap">
+<h1>Gregor Grigorjan</h1>
+<p class="tag">open source ・ nixos ・ emacs</p>
+<p class="jp">グレゴル ・ タリン ・ エストニア</p>
+
+<div class="box">
+<h2>Contact</h2>
+<ul>
+<li><b>resume</b><a href="./resume.pdf">resume.pdf</a></li>
+<li><b>email</b><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+<li><b>phone</b><a href="tel:+37256952152">+372 5695 2152</a></li>
+<li><b>github</b><a href="https://github.com/gekoke">gekoke</a></li>
+<li><b>linkedin</b><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+<li><b>hn</b><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+</ul>
+</div>
+
+<div class="box">
+<h2>About</h2>
+<p>I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple.</p>
+<p>No JS. No fonts. No images. No trackers. No CDN.</p>
+</div>
+
+<footer>build <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a> ・ a e s t h e t i c</footer>
+</div>
+</body>
+</html>

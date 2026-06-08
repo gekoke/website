@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gregor.toml</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#1e1e2e;--fg:#cdd6f4;--mut:#6c7086;--key:#89b4fa;--str:#a6e3a1;--num:#fab387;--sec:#f38ba8;--com:#585b70}
+@media (prefers-color-scheme:light){:root{--bg:#eff1f5;--fg:#4c4f69;--mut:#9ca0b0;--key:#1e66f5;--str:#40a02b;--num:#fe640b;--sec:#d20f39;--com:#9ca0b0}}
+body{background:var(--bg);color:var(--fg);font-family:ui-monospace,"JetBrains Mono","Fira Code",Consolas,monospace;font-size:15px;line-height:1.55;margin:0;display:flex;justify-content:center;min-height:100vh}
+.wrap{max-width:80ch;width:100%;padding:2.5rem 1.5rem;white-space:pre-wrap}
+.c{color:var(--com);font-style:italic}
+.s{color:var(--sec);font-weight:bold}
+.k{color:var(--key)}
+.v{color:var(--str)}
+.n{color:var(--num)}
+.p{color:var(--mut)}
+a,a:visited{color:var(--str);text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap"><span class="c"># gregor.toml &mdash; me, in 30 lines</span>
+
+<span class="p">[</span><span class="s">person</span><span class="p">]</span>
+<span class="k">name</span>     <span class="p">=</span> <span class="v">"Gregor Grigorjan"</span>
+<span class="k">role</span>     <span class="p">=</span> <span class="v">"Open-source contributor, NixOS enthusiast, Emacs tinkerer"</span>
+<span class="k">location</span> <span class="p">=</span> <span class="v">"Tallinn, Estonia"</span>
+<span class="k">tz</span>       <span class="p">=</span> <span class="v">"Europe/Tallinn"</span>
+
+<span class="p">[</span><span class="s">contact</span><span class="p">]</span>
+<span class="k">resume</span>   <span class="p">=</span> <span class="v">"<a href="./resume.pdf">./resume.pdf</a>"</span>
+<span class="k">email</span>    <span class="p">=</span> <span class="v">"<a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a>"</span>
+<span class="k">phone</span>    <span class="p">=</span> <span class="v">"<a href="tel:+37256952152">+372 5695 2152</a>"</span>
+<span class="k">github</span>   <span class="p">=</span> <span class="v">"<a href="https://github.com/gekoke">https://github.com/gekoke</a>"</span>
+<span class="k">linkedin</span> <span class="p">=</span> <span class="v">"<a href="https://www.linkedin.com/in/gregor-grigorjan/">https://linkedin.com/in/gregor-grigorjan</a>"</span>
+<span class="k">hn</span>       <span class="p">=</span> <span class="v">"<a href="https://news.ycombinator.com/user?id=turboponyy">https://news.ycombinator.com/user?id=turboponyy</a>"</span>
+
+<span class="p">[</span><span class="s">about</span><span class="p">]</span>
+<span class="k">summary</span> <span class="p">=</span> <span class="v">"""
+I write software, mostly in functional languages.
+I care about reproducible systems, sharp tools,
+and keeping things simple.
+"""</span>
+
+<span class="p">[</span><span class="s">site</span><span class="p">]</span>
+<span class="k">javascript</span> <span class="p">=</span> <span class="n">false</span>
+<span class="k">webfonts</span>   <span class="p">=</span> <span class="n">false</span>
+<span class="k">images</span>     <span class="p">=</span> <span class="n">false</span>
+<span class="k">trackers</span>   <span class="p">=</span> <span class="n">false</span>
+<span class="k">cdn</span>        <span class="p">=</span> <span class="n">false</span>
+
+<span class="p">[</span><span class="s">build</span><span class="p">]</span>
+<span class="k">commit</span> <span class="p">=</span> <span class="v">"<a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a>"</span>
+</div>
+</body>
+</html>

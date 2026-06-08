@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gregor.exe</title>
+<link rel="icon" href="data:,">
+<style>
+body{background:#008080;color:#000;font-family:"MS Sans Serif",Tahoma,Verdana,system-ui,sans-serif;font-size:13px;margin:0;padding:1.5em;min-height:100vh}
+.win{background:#c0c0c0;border:2px solid;border-color:#fff #404040 #404040 #fff;box-shadow:1px 1px 0 #000;max-width:640px;margin:0 auto 1em}
+.tbar{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-weight:bold;padding:.2em .4em;display:flex;align-items:center;gap:.4em}
+.tbar .ico{display:inline-block;width:14px;height:14px;background:#ffff80;border:1px solid #000}
+.tbar .x{margin-left:auto;background:#c0c0c0;color:#000;border:2px solid;border-color:#fff #404040 #404040 #fff;width:18px;height:16px;text-align:center;line-height:13px;font-weight:bold}
+.menu{background:#c0c0c0;border-bottom:1px solid #808080;padding:.1em .3em;display:flex;gap:.8em;font-size:12px}
+.menu u{text-decoration:underline}
+.body{padding:1em}
+.field{background:#fff;border:2px solid;border-color:#808080 #fff #fff #808080;padding:.7em 1em;margin-bottom:.8em}
+h1{font-size:18px;margin:0 0 .2em}
+h2{font-size:13px;margin:.8em 0 .3em;background:#000080;color:#fff;padding:.15em .4em}
+.tag{font-style:italic}
+a,a:visited{color:#0000ee;text-decoration:underline}
+a:visited{color:#551a8b}
+a:hover{background:#000080;color:#fff}
+ul{list-style:none;padding:0;margin:0}
+li{padding:.1em 0}
+li b{display:inline-block;min-width:7em}
+.btnrow{display:flex;gap:.5em;justify-content:flex-end;margin-top:.8em}
+.btn{background:#c0c0c0;border:2px solid;border-color:#fff #404040 #404040 #fff;padding:.2em 1.2em;font-family:inherit;font-size:13px;text-decoration:none;color:#000;min-width:75px;text-align:center}
+.btn:hover{text-decoration:none}
+.btn:active{border-color:#404040 #fff #fff #404040}
+.status{background:#c0c0c0;border-top:1px solid #fff;padding:.15em .4em;font-size:12px;display:flex;justify-content:space-between;border-color:#fff #404040 #404040 #fff;border-style:solid;border-width:1px 0 0 0}
+.status div{padding:.1em .4em;border:1px solid;border-color:#808080 #fff #fff #808080}
+</style>
+</head>
+<body>
+<div class="win">
+  <div class="tbar"><span class="ico"></span><span>Gregor.exe — About</span><span class="x">×</span></div>
+  <div class="menu"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>H</u>elp</span></div>
+  <div class="body">
+    <div class="field">
+      <h1>Gregor Grigorjan</h1>
+      <p class="tag">Open-source contributor, NixOS enthusiast, Emacs tinkerer.</p>
+      <p>Tallinn, Estonia &middot; Version 1.0 &middot; <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">build %%GIT_REV%%</a></p>
+    </div>
+    <h2>Contact</h2>
+    <div class="field">
+      <ul>
+        <li><b>Resume:</b><a href="./resume.pdf">resume.pdf</a></li>
+        <li><b>Email:</b><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+        <li><b>Phone:</b><a href="tel:+37256952152">+372 5695 2152</a></li>
+        <li><b>GitHub:</b><a href="https://github.com/gekoke">gekoke</a></li>
+        <li><b>LinkedIn:</b><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+        <li><b>Hacker News:</b><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+      </ul>
+    </div>
+    <h2>About</h2>
+    <div class="field">
+      <p>I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple.</p>
+      <p>No JavaScript. No web fonts. No images. No trackers. No CDN requests.</p>
+    </div>
+    <div class="btnrow">
+      <a class="btn" href="./resume.pdf"><u>O</u>K</a>
+      <a class="btn" href="mailto:gregor@grigorjan.net">Email</a>
+    </div>
+  </div>
+  <div class="status"><div>Ready</div><div>2 object(s)</div></div>
+</div>
+</body>
+</html>

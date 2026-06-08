@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GG-VT100</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--g:#33ff33;--g2:#22aa22;--g3:#0a3a0a;--bg:#001100}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--g);font-family:ui-monospace,"Courier New",monospace;font-size:15px;line-height:1.5;text-shadow:0 0 4px var(--g)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 2px,transparent 2px 4px);z-index:1}
+.wrap{max-width:80ch;margin:0 auto;padding:2rem 1.25rem;position:relative;z-index:2}
+.term{border:2px solid var(--g2);padding:1.5rem;background:rgba(0,30,0,.4);box-shadow:inset 0 0 40px rgba(0,255,0,.15)}
+.bar{background:var(--g);color:var(--bg);padding:.2em .6em;text-shadow:none;font-weight:bold;letter-spacing:2px;margin:-1.5rem -1.5rem 1rem;display:flex;justify-content:space-between}
+h1{margin:0;font-size:1.4rem;letter-spacing:2px}
+h2{font-size:1rem;color:var(--g);text-transform:uppercase;letter-spacing:3px;margin:1.5em 0 .5em}
+h2::before{content:"── "}h2::after{content:" "}
+a,a:visited{color:var(--g);text-decoration:underline}
+a:hover{background:var(--g);color:var(--bg);text-shadow:none}
+ul{list-style:none;padding:0}
+li::before{content:"▸ ";color:var(--g2)}
+.k{display:inline-block;min-width:11ch;color:var(--g2)}
+.cur{display:inline-block;width:.55em;height:1em;background:var(--g);vertical-align:text-bottom;animation:b 1.06s steps(2) infinite}
+@keyframes b{50%{opacity:0}}
+hr{border:0;border-top:1px dashed var(--g2)}
+footer{margin-top:1.5em;color:var(--g2);font-size:.85em;border-top:1px solid var(--g3);padding-top:.8em}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="term">
+<div class="bar"><span>GG-VT100</span><span>ONLINE</span></div>
+<pre style="margin:0;color:var(--g2)">CONNECTING TO TALLINN.EE ........ OK
+NEGOTIATING 9600 8N1 ............ OK
+LOGIN AS gregor ................. OK
+</pre>
+<hr>
+<h1>GREGOR GRIGORJAN <span class="cur"></span></h1>
+<p>&gt; open-source contributor, nixos enthusiast, emacs tinkerer</p>
+<p>&gt; loc: tallinn, estonia</p>
+
+<h2>contact</h2>
+<ul>
+<li><span class="k">resume</span><a href="./resume.pdf">resume.pdf</a></li>
+<li><span class="k">email</span><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+<li><span class="k">phone</span><a href="tel:+37256952152">+372 5695 2152</a></li>
+<li><span class="k">github</span><a href="https://github.com/gekoke">gekoke</a></li>
+<li><span class="k">linkedin</span><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+<li><span class="k">hn</span><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+</ul>
+
+<h2>about</h2>
+<p>I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple.</p>
+<p>No JS. No fonts. No images. No trackers. No CDN.</p>
+
+<footer>BUILD %%GIT_REV%% &middot; <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">view source</a></footer>
+</div></div>
+</body>
+</html>

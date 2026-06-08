@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GREGOR GRIGORJAN — Engineer</title>
+<link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f0ede5;color:#111;font-family:"Helvetica Neue",Inter,system-ui,Arial,sans-serif;font-size:16px;line-height:1.4}
+.grid{max-width:1100px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
+.row{grid-column:1/-1;border-top:1px solid #111;padding-top:.5rem}
+h1{grid-column:1/-1;font-size:clamp(3.5rem,11vw,9rem);font-weight:900;letter-spacing:-.04em;line-height:.85;text-transform:uppercase}
+.tag{grid-column:1/8;font-size:1.4rem;font-weight:500;text-transform:uppercase;letter-spacing:.02em;border-top:1px solid #111;padding-top:.5rem}
+.loc{grid-column:8/-1;text-align:right;font-size:1.4rem;font-weight:500;text-transform:uppercase;letter-spacing:.02em;border-top:1px solid #111;padding-top:.5rem}
+.meta{grid-column:1/4;font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:#666}
+.body{grid-column:4/-1;font-size:1.05rem;max-width:60ch}
+h2{grid-column:1/-1;font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;font-weight:700;border-top:2px solid #111;padding-top:.4rem;color:#666;margin-top:1rem}
+.contact{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,1fr);gap:.75rem 1.25rem}
+.contact div{grid-column:span 4}
+.contact b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:#666;font-weight:600;margin-bottom:.15em}
+.contact a{color:#111;text-decoration:none;font-size:1.1rem;font-weight:500;border-bottom:1px solid #111}
+.contact a:hover{background:#111;color:#f0ede5;border-color:#111}
+.dot{display:inline-block;width:.6em;height:.6em;border-radius:50%;background:#d33;vertical-align:middle;margin-right:.5em}
+.num{font-variant-numeric:tabular-nums}
+footer{grid-column:1/-1;border-top:1px solid #111;padding-top:.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:#666;display:flex;justify-content:space-between}
+@media (prefers-color-scheme:dark){body{background:#111;color:#f0ede5}.row,h2,.contact a,.tag,.loc,footer{border-color:#f0ede5}.contact a{color:#f0ede5;border-color:#f0ede5}.contact a:hover{background:#f0ede5;color:#111}.meta,h2,footer{color:#888}}
+@media (max-width:600px){.tag,.loc{grid-column:1/-1;text-align:left}.meta{grid-column:1/-1}.body{grid-column:1/-1}.contact div{grid-column:span 12}}
+</style>
+</head>
+<body>
+<div class="grid">
+<div class="row" style="display:flex;justify-content:space-between;font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;color:#666"><span><span class="dot"></span>Available for work</span><span class="num">2026 / №01</span></div>
+<h1>Gregor<br>Grigorjan</h1>
+<div class="tag">Open-source contributor / NixOS enthusiast / Emacs tinkerer</div>
+<div class="loc">Tallinn, Estonia</div>
+
+<h2>About</h2>
+<div class="meta">/ statement</div>
+<div class="body">I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things simple. This page ships no JavaScript, no web fonts, no images, no trackers, and no CDN requests.</div>
+
+<h2>Contact</h2>
+<div class="contact">
+<div><b>01 / Resume</b><a href="./resume.pdf">resume.pdf</a></div>
+<div><b>02 / Email</b><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></div>
+<div><b>03 / Phone</b><a class="num" href="tel:+37256952152">+372 5695 2152</a></div>
+<div><b>04 / GitHub</b><a href="https://github.com/gekoke">gekoke</a></div>
+<div><b>05 / LinkedIn</b><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></div>
+<div><b>06 / Hacker News</b><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></div>
+</div>
+
+<footer><span>© Gregor Grigorjan &mdash; Tallinn EE</span><span>Build <a style="color:inherit" href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a></span></footer>
+</div>
+</body>
+</html>

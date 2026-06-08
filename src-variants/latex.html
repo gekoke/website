@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gregor Grigorjan</title>
+<link rel="icon" href="data:,">
+<style>
+body{background:#fdfdf8;color:#111;font-family:"Latin Modern Roman","Computer Modern Serif","CMU Serif",Cambria,Georgia,"Times New Roman",serif;max-width:36em;margin:3em auto;padding:0 1.25em;line-height:1.5;font-size:18px;text-align:justify;hyphens:auto}
+@media (prefers-color-scheme:dark){body{background:#111;color:#eee}}
+.title{text-align:center;margin-bottom:2em}
+.title h1{font-size:1.6em;font-weight:400;margin:0 0 .2em}
+.title .author{font-size:1.1em;font-style:italic;margin:.2em 0}
+.title .date{font-size:.95em;color:#555}
+@media (prefers-color-scheme:dark){.title .date{color:#aaa}}
+h2{font-size:1.05em;font-weight:bold;margin:1.5em 0 .3em;text-align:left}
+.sec{counter-increment:sec;font-weight:bold}
+.sec::before{content:counter(sec) ".  "}
+body{counter-reset:sec}
+a,a:visited{color:#0033aa;text-decoration:none}
+@media (prefers-color-scheme:dark){a,a:visited{color:#9bb6ff}}
+a:hover{text-decoration:underline}
+.abstract{margin:1.5em 4em;font-size:.92em;text-align:justify}
+.abstract::before{content:"Abstract.";font-weight:bold;font-variant:small-caps;letter-spacing:1px;margin-right:.5em}
+table{margin:0 auto;border-collapse:collapse}
+td{padding:.15em 1em;vertical-align:top}
+td:first-child{font-style:italic;text-align:right;color:#555}
+@media (prefers-color-scheme:dark){td:first-child{color:#aaa}}
+hr{border:0;border-top:1px solid #ccc;margin:2em auto;width:30%}
+footer{text-align:center;font-size:.82em;color:#555;margin:3em 0 1em;font-style:italic}
+@media (prefers-color-scheme:dark){footer{color:#888}}
+.eq{font-style:italic}
+</style>
+</head>
+<body>
+<div class="title">
+<h1>A Concise Self-Description</h1>
+<div class="author">Gregor Grigorjan<sup>1</sup></div>
+<div class="date"><sup>1</sup>Tallinn, Estonia &middot; <span class="eq">gregor@grigorjan.net</span></div>
+</div>
+
+<div class="abstract">We present a minimal personal homepage of one Gregor Grigorjan, comprising contact information and a brief biographical statement. The document is served as static HTML and CSS, free of JavaScript, web fonts, images, third-party trackers, and CDN dependencies. We argue informally that this approach yields favourable transmission characteristics.</div>
+
+<h2 class="sec">Introduction</h2>
+<p>The author is an open-source contributor, NixOS enthusiast, and Emacs tinkerer. He writes software, primarily in functional languages, and is interested in reproducible systems, sharp tools, and the keeping of things simple.</p>
+
+<h2 class="sec">Correspondence</h2>
+<table>
+<tr><td>Curriculum Vit&aelig;</td><td><a href="./resume.pdf">resume.pdf</a></td></tr>
+<tr><td>Email</td><td><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></td></tr>
+<tr><td>Telephone</td><td><a href="tel:+37256952152">+372 5695 2152</a></td></tr>
+<tr><td>GitHub</td><td><a href="https://github.com/gekoke">gekoke</a></td></tr>
+<tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></td></tr>
+<tr><td>Hacker News</td><td><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></td></tr>
+</table>
+
+<h2 class="sec">Conclusion</h2>
+<p>The reader is invited to contact the author through any of the channels enumerated in &sect;2, or to peruse the underlying source<sup>&dagger;</sup>.</p>
+
+<hr>
+<footer><sup>&dagger;</sup>Compiled from commit <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a>.</footer>
+</body>
+</html>

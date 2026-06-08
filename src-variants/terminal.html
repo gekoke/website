@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gregor Grigorjan</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#1d2021;--fg:#d5c4a1;--fg-muted:#928374;--fg-subtle:#665c54;--border:#3c3836;--accent:#b8bb26;--link:#83a598;--heading:#fb4934;--hover:#d3869b;--code-bg:#282828}
+@media (prefers-color-scheme:light){:root{--bg:#fbf1c7;--fg:#3c3836;--fg-muted:#7c6f64;--fg-subtle:#928374;--border:#d5c4a1;--accent:#79740e;--link:#076678;--heading:#9d0006;--hover:#8f3f71;--code-bg:#ebdbb2}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font-family:ui-monospace,"Cascadia Code","Source Code Pro",Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:1rem;line-height:1.5;margin:0;display:flex;justify-content:center;min-height:100vh}
+.container{max-width:72ch;width:100%;padding:2rem 1.5rem}
+header{border-bottom:1px solid var(--border);margin-bottom:1.5rem;padding-bottom:1rem}
+h1{color:var(--heading);font-size:1.6rem;margin:0 0 .25rem}
+h1::before{content:"# ";color:var(--fg-subtle)}
+h2::before{content:"## ";color:var(--fg-subtle)}
+h2{color:var(--heading);font-size:1.2rem;margin:1.75rem 0 .5rem}
+.tagline{color:var(--fg-muted);margin:0}
+.tagline::before{content:"> ";color:var(--accent)}
+a,a:visited{color:var(--link);text-decoration:none}
+a:hover,a:focus{text-decoration:underline;color:var(--hover)}
+.location{color:var(--fg-muted);margin:.5rem 0 0}
+.location::before{content:"@ ";color:var(--accent)}
+ul.links{list-style:none;padding:0;margin:0}
+ul.links li{padding:.15rem 0}
+ul.links li::before{content:"- ";color:var(--fg-subtle)}
+.key{display:inline-block;min-width:11ch;color:var(--accent)}
+code{background:var(--code-bg);padding:1px .35rem;border-radius:3px;font-family:inherit}
+footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--fg-subtle);font-size:.85rem;text-align:center}
+footer a{color:var(--fg-muted)}
+.blink{animation:blink 1s steps(2,start) infinite;color:var(--accent)}
+@keyframes blink{to{visibility:hidden}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Gregor Grigorjan<span class="blink">_</span></h1>
+<p class="tagline">Open-source contributor, NixOS enthusiast, Emacs tinkerer</p>
+<p class="location">Tallinn, Estonia</p>
+</header>
+
+<main>
+<h2>contact</h2>
+<ul class="links">
+<li><span class="key">resume</span><a href="./resume.pdf">resume.pdf</a></li>
+<li><span class="key">email</span><a href="mailto:gregor@grigorjan.net">gregor@grigorjan.net</a></li>
+<li><span class="key">phone</span><a href="tel:+37256952152">+372 5695 2152</a></li>
+<li><span class="key">github</span><a href="https://github.com/gekoke">github.com/gekoke</a></li>
+<li><span class="key">linkedin</span><a href="https://www.linkedin.com/in/gregor-grigorjan/">/in/gregor-grigorjan</a></li>
+<li><span class="key">hn</span><a href="https://news.ycombinator.com/user?id=turboponyy">turboponyy</a></li>
+</ul>
+
+<h2>about</h2>
+<p>Hi. I write software, mostly in functional languages. I care about reproducible systems, sharp tools, and keeping things <code>simple</code>.</p>
+<p>This page ships no JavaScript, no fonts, no images, no trackers, and no CDN requests. Just <code>HTML</code> and <code>CSS</code>.</p>
+</main>
+
+<footer>
+<a href="https://github.com/gekoke/website">source</a><br>
+<small>built from commit <a href="https://github.com/gekoke/website/commit/%%GIT_REV%%"><code>%%GIT_REV%%</code></a></small>
+</footer>
+</div>
+</body>
+</html>

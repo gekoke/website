@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gregor Grigorjan</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#fdfcfa;--fg:#1a1a1a;--mut:#888;--rule:#e5e2da;--accent:#1a1a1a}
+@media (prefers-color-scheme:dark){:root{--bg:#15140f;--fg:#e8e4d8;--mut:#888;--rule:#2a2820;--accent:#e8e4d8}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:Iowan Old Style,Georgia,Cambria,Charter,serif;font-size:18px;line-height:1.7;font-weight:300;margin:0;display:grid;place-items:center;min-height:100vh;padding:5vh 5vw}
+.wrap{max-width:32em;width:100%}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent);margin:0 auto 4em}
+h1{font-size:1.4em;font-weight:400;letter-spacing:.5px;text-align:center;margin:0 0 .2em}
+.tag{text-align:center;color:var(--mut);font-style:italic;margin:0 0 4em;font-size:.95em}
+h2{font-size:.7em;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);text-align:center;margin:3em 0 1.5em}
+p{margin:.6em 0}
+a,a:visited{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px}
+a:hover{border-bottom-color:var(--accent)}
+ul{list-style:none;padding:0;margin:0;text-align:center}
+li{padding:.4em 0}
+hr{border:0;border-top:1px solid var(--rule);width:30%;margin:3em auto}
+footer{text-align:center;color:var(--mut);font-size:.75em;letter-spacing:.2em;text-transform:uppercase;margin-top:5em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="dot"></div>
+<h1>Gregor Grigorjan</h1>
+<p class="tag">Tallinn, Estonia</p>
+
+<h2>·</h2>
+
+<p style="text-align:center">Open-source contributor.</p>
+<p style="text-align:center">NixOS enthusiast.</p>
+<p style="text-align:center">Emacs tinkerer.</p>
+
+<h2>Contact</h2>
+<ul>
+<li><a href="./resume.pdf">resume</a></li>
+<li><a href="mailto:gregor@grigorjan.net">email</a></li>
+<li><a href="tel:+37256952152">phone</a></li>
+<li><a href="https://github.com/gekoke">github</a></li>
+<li><a href="https://www.linkedin.com/in/gregor-grigorjan/">linkedin</a></li>
+<li><a href="https://news.ycombinator.com/user?id=turboponyy">hacker news</a></li>
+</ul>
+
+<hr>
+<footer><a href="https://github.com/gekoke/website/commit/%%GIT_REV%%">%%GIT_REV%%</a></footer>
+</div>
+</body>
+</html>
