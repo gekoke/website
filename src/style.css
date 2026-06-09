@@ -1,133 +1,112 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
-@import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
 :root {
-    --base00: #32302f;
-    --base01: #3c3836;
-    --base02: #504945;
-    --base03: #665c54;
-    --base04: #bdae93;
-    --base05: #d5c4a1;
-    --base06: #ebdbb2;
-    --base07: #fbf1c7;
-    --base08: #fb4934;
-    --base09: #fe8019;
-    --base0A: #fabd2f;
-    --base0B: #b8bb26;
-    --base0C: #8ec07c;
-    --base0D: #83a598;
-    --base0E: #d3869b;
-    --base0F: #d65d0e;
+  --bg: #faf6ee;
+  --fg: #222;
+  --accent: #5a3825;
+  --muted: #7c6852;
+  --border: #d8cfb8;
+
+  --font-serif: Charter, "Iowan Old Style", Georgia, serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1815;
+    --fg: #e8dfc9;
+    --accent: #d4a373;
+    --muted: #9c8c70;
+    --border: #3a342a;
+  }
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--base01);
-    color: var(--base05);
-
-    font-family: 'Iosevka Web', monospace;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 2em 1.25em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--base08);
+.url {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
+.url b {
+  color: var(--accent);
 }
 
-.bio img {
-    width: 300px;
-    border-radius: 50%;
+.url .mime {
+  margin-left: auto;
 }
 
-.bio .name {
-    font-size: 2.15em;
-    color: var(--base06);
+h1 {
+  font-size: 1.7em;
+  color: var(--accent);
+  margin: 0 0 0.2em;
+  font-weight: 600;
 }
 
-.bio .description {
-    font-family: 'Comic Neue';
-    font-style: italic;
-    text-align: center;
-    max-width: 70ch;
+h2 {
+  font-size: 1.25em;
+  color: var(--accent);
+  margin: 1.4em 0 0.3em;
+  font-weight: 600;
 }
 
-.bio #location-cont i {
-    color: var(--base0B);
+.quote {
+  border-left: 3px solid var(--accent);
+  padding: 0.1em 1em;
+  color: var(--muted);
+  font-style: italic;
+  margin: 1em 0;
 }
 
-.bio i {
-    font-size: 1.5em;
-    transition: all 0.15s ease-in-out;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.bio .contact-info i {
-    font-size: 1.75em;
+.link {
+  display: block;
+  padding: 0.15em 0;
 }
 
-.bio .contact-info i:hover {
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-  transform: translate3d(0px, -4px, 0px);
-  color: var(--base0E);
+.link::before {
+  content: "=> ";
+  color: var(--accent);
+  font-family: var(--font-mono);
 }
 
-.bio .contact-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5em;
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+  text-decoration-color: var(--muted);
 }
 
-.bio .contact-info a {
-    color: var(--base05);
+a:hover {
+  text-decoration-color: var(--accent);
 }
 
-ul.contact-info {
-    padding-inline-start: 0;
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
 }
 
-.bio .contact-info li {
-    padding-inline-start: 0;
-    list-style-type: none;
-}
-
-.tippy-box[data-theme~='geko'] {
-    color: var(--base02);
-    background-color: var(--base0E);
-}
-.tippy-arrow[data-theme~='geko'] {
-    background-color: var(--base0E);
-}
-
-.tippy-box[data-theme~='geko'][data-placement^='top'] > .tippy-arrow::before {
-  border-top-color: var(--base0E);
-}
-.tippy-box[data-theme~='geko'][data-placement^='bottom'] > .tippy-arrow::before {
-  border-bottom-color: var(--base0E);
-}
-.tippy-box[data-theme~='geko'][data-placement^='left'] > .tippy-arrow::before {
-  border-left-color: var(--base0E);
-}
-.tippy-box[data-theme~='geko'][data-placement^='right'] > .tippy-arrow::before {
-  border-right-color: var(--base0E);
+footer {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  margin-top: 2em;
 }

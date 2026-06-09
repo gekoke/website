@@ -4,7 +4,7 @@
     resume.url = "github:gekoke/resume";
   };
 
-  outputs = { nixpkgs, resume, ... }:
+  outputs = { self, nixpkgs, resume, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
@@ -14,6 +14,10 @@
         name = "website";
         src = ./src;
         dontBuild = true;
+        patchPhase = ''
+          substituteInPlace index.html \
+              --replace-fail "%%GIT_REV%%" "${self.sourceInfo.rev or "UNCOMMITTED CHANGES"}"
+        '';
         installPhase = ''
           mkdir -p $out/public
           cp ./* $out/public/
