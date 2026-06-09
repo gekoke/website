@@ -13,7 +13,7 @@
       packages.${system}.default = pkgs.stdenvNoCC.mkDerivation {
         name = "website";
         src = ./src;
-        buildPhase = null;
+        dontBuild = true;
         installPhase = ''
           mkdir -p $out/public
           cp ./* $out/public/
