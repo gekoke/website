@@ -195,11 +195,11 @@
         "typix": "typix"
       },
       "locked": {
-        "lastModified": 1737217271,
-        "narHash": "sha256-oXUl8Diqinw+rBj3As/t1f9y879XV18MBnyNfKnqyk4=",
+        "lastModified": 1781085770,
+        "narHash": "sha256-0QuNr8m4oUcqTXub0wweMdguiURHmihDdhY3+2mDnMk=",
         "owner": "gekoke",
         "repo": "resume",
-        "rev": "d6c16e906e65263405da21e3c8bb3359c9952c07",
+        "rev": "0ff5d9b2b4e1727718e7281645b4c80f10b96da5",
         "type": "github"
       },
       "original": {
